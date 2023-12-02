@@ -1,3 +1,4 @@
+check prime number
 #include<stdio.h>
 int main()
 {
@@ -25,6 +26,89 @@ int main()
         }
         printf("Total Prime Numbers:%d \n",totalprime);
         printf("Total Sum Prime Numbers:%d ",sum);
+        return 0;
+
+}
+check factorial number code
+
+#include<stdio.h>
+int main()
+{
+  int i,fact=1,n;
+  printf("Enter any positive number:");
+  scanf("%d",&n);
+
+  for(i=1;i<=n;i++)
+  {
+      fact =fact*i;
+  }
+  printf("%d\n",fact);
+  return 0;
+}
+
+**sum of digits**
+#include<stdio.h>
+int main()
+{
+    int num,tem,r,sum=0;
+    printf("Enter any number ");
+    scanf("%d",&num);
+
+    tem=num;
+    while(tem!=0)
+    {
+        r=tem%10;
+        sum=sum+r;
+        tem=tem/10;
+    }
+    printf("%d",sum);
+
+}
+
+**revers of number**
+
+#include<stdio.h>
+int main()
+{
+    int n,tem,r,sum=0;
+    printf("Enter your number ");
+    scanf("%d",&n);
+
+    tem=n;
+
+      while (tem!=0) {
+        r = tem % 10;
+        sum = sum * 10 + r;
+        tem = tem / 10;
+    }
+  printf("Revers of number %d",sum);
+    return 0;
+}
+
+
+**Palindrome number**
+
+
+#include<stdio.h>
+int main()
+{
+    int n,tem,r,sum=0;
+    //printf("Enter any number ");
+    scanf("%c",&n);
+
+    tem=n;
+    while(n!=0)
+    {
+        r=tem%10;
+        n=sum*10+r;
+        tem=tem/10;
+    }
+    if(n==sum){
+        printf("Palindrome");
+        }
+    else{
+        printf("Not");
+       } 
         return 0;
 
 }
