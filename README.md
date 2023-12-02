@@ -94,7 +94,7 @@ int main()
 {
     int n,tem,r,sum=0;
     //printf("Enter any number ");
-    scanf("%c",&n);
+    scanf("%d",&n);
 
     tem=n;
     while(n!=0)
@@ -112,3 +112,27 @@ int main()
         return 0;
 
 }
+**Armstrong Number**
+#include<stdio.h>
+
+int main() {
+    int n, tem, r, sum = 0;
+    printf("Enter any number: ");
+    scanf("%d", &n);
+
+    tem = n;
+    while (tem != 0) {
+        r = tem % 10;
+        sum = sum + r * r * r;
+        tem = tem / 10;
+    }
+
+    if (sum == n) {
+        printf("Armstrong Number");
+    } else {
+        printf("Not Armstrong Number");
+    }
+
+    return 0;
+}
+
