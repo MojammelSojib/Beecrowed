@@ -200,5 +200,22 @@ int main()
     printf("=%d\n",sum);
     return 0;
 }
+**  Series – 2**
+#include<stdio.h>
+int main()
+{
+    int n,a=1,sum=0;
+    printf("Enter the last digit: ");
+    scanf("%d",&n);
+    printf("1+2+3+.....+%d",n);
+
+   while(a<=n)
+    {
+        sum=sum+a;
+        a=a+1;
+    }
+    printf("=%d\n",sum);
+    return 0;
+}
 
 
