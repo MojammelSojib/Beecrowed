@@ -154,3 +154,34 @@ int main()
     return 0;
 }
 
+**Strong Number**
+#include<stdio.h>
+int main()
+{
+    int n,sum=0,r,tem,i,fact;
+
+    printf("Enter a integer: ");
+    scanf("%d",&n);
+
+    tem=n;
+    while(tem!=0)
+    {
+        r=tem%10;
+        fact=1;
+        for(i=1;i<=r;i++)
+        {
+            fact=fact*i;
+        }
+
+        sum=sum+fact;
+        tem=tem/10;
+    }
+    if(sum==n){
+        printf("%d is Strong number ",n);
+    }else
+    {
+         printf("%d is not Strong number ",n);
+    }
+    return 0;
+}
+
