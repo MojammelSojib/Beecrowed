@@ -217,5 +217,21 @@ int main()
     printf("=%d\n",sum);
     return 0;
 }
+**SUM of Even Number**
+#include<stdio.h>
+int main()
+{
+    int i,n,sum=0;
+    printf("Entre your Number: ");
+    scanf("%d",&n);
 
+    for(i=2;i<=n;i=i+2)
+    {
 
+       printf("%d ",i);
+       sum=sum+i;
+    }
+    printf("\nSum = %d\n",sum);
+    return 0;
+
+}
