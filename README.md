@@ -235,3 +235,32 @@ int main()
     return 0;
 
 }
+**Maximum and Minimum of Array**
+#include<stdio.h>
+
+int main() {
+    int num[1000], n, i;
+
+    printf("How many Numbers: ");
+    scanf("%d", &n);
+
+    for(i = 0; i < n; i++) {
+        scanf("%d", &num[i]);
+    }
+
+    int max = num[0];
+    int maxIndex = 0;
+
+    for(i = 1; i < n; i++) {
+        if (max < num[i]) {
+            max = num[i];
+            maxIndex = i;
+        }
+    }
+
+    printf("Maximum variable = %d\n", max);
+    printf("Position (index) of maximum variable = %d\n", maxIndex+1);
+
+    return 0;
+}
+
