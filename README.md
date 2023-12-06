@@ -290,4 +290,32 @@ int main() {
       return 0;
 }
 
-    
+Array | Searching a number (Linear search)
+#include<stdio.h>
+int main()
+{
+    int num[9]={10,5,17,18,90};
+    int value,pos=-1,i;
+    printf("Enter the value you want to search: ");
+    scanf("%d",&value);
+
+    for(i=0;i<9;i++)
+        {
+            if(value==num[i])
+            {
+                pos=i+1;
+                break;
+            }
+        }
+
+    if(pos==-1)
+    {
+        printf("Not Found");
+    }
+    else
+    {
+        printf("The poistion %d",pos);
+    }
+    return 0;
+}
+
