@@ -354,3 +354,28 @@ int main() {
     return 0;
 }
 
+2D Array
+
+#include<stdio.h>
+
+int main() {
+    int i, j;
+    int A[3][4];
+
+    // Input
+    for(i = 0; i < 3; i++) {
+        for(j = 0; j < 4; j++) {
+            scanf("%d", &A[i][j]); // Add & before A[i][j]
+        }
+    }
+
+    // Output
+    for(i = 0; i < 3; i++) {
+        for(j = 0; j < 4; j++) {
+            printf("%d ", A[i][j]); // Print a space after each element
+        }
+        printf("\n"); // Add a newline after each row
+    }
+
+    return 0;
+}
