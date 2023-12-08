@@ -621,4 +621,55 @@ int main()
     return 0;
 
 }
+Transpose Matrix
+
+
+#include <stdio.h>
+
+int main() {
+    int A[10][10],tr[10][10],i, j, r, c;
+
+    printf("Enter number of rows and columns for the matrix: ");
+    scanf("%d %d", &r, &c);
+
+    for (i = 0; i < r; i++) {
+        for (j = 0; j < c; j++) {
+            printf("A [%d] [%d] = ", i, j);
+            scanf("%d", &A[i][j]);
+        }
+    }
+
+        //tranpose
+       for (i = 0; i < r; i++)
+    {
+           for (j = 0; j < c; j++)
+            {
+            tr[j][i] = A[i][j];
+            }
+    }
+
+    printf("\n\nFirst Matrix \n");
+    for (i = 0; i < r; i++) {
+        for (j = 0; j < c; j++)
+            printf("%d ", A[i][j]);
+        printf("\n");
+    }
+
+    //printing tranpose
+
+    printf("\n\nTranpose matrix = \n");
+    for (i = 0; i < c; i++)
+    {
+           for (j = 0; j < r; j++)
+            {
+            printf("%d ",tr[i][j]);
+            }
+            printf("\n");
+    }
+
+
+    return 0;
+}
+
+
 
