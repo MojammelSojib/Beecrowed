@@ -672,4 +672,46 @@ int main() {
 }
 
 
+Diagonal elements sum
 
+
+#include<stdio.h>
+int main()
+{
+    int A[10][10],i,j,sum=0;
+
+    printf("Enter the elements of matrix:\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("A[%d][%d] = ",i,j);
+            scanf("%d",&A[i][j]);
+        }
+    }
+    //output
+
+    printf("Matrix A:\n");
+     for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%d\t",A[i][j]);
+        }
+        printf("\n");
+    }
+    //diagonal matrix
+         for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            if(i==j)
+             {
+                sum=sum+A[i][j];
+             }
+        }
+    }
+    printf("Sum of Diagonal matrix = %d\n",sum);
+
+    return 0;
+}
