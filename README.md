@@ -715,3 +715,67 @@ int main()
 
     return 0;
 }
+
+Sum of upper & lower triangles
+
+#include<stdio.h>
+int main()
+{
+    int A[10][10],i,j,sum=0,uppersum=0,lowersum=0;
+
+    printf("Enter the elements of matrix:\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("A[%d][%d] = ",i,j);
+            scanf("%d",&A[i][j]);
+        }
+    }
+    //output
+
+    printf("Matrix A:\n");
+     for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%d\t",A[i][j]);
+        }
+        printf("\n");
+    }
+    //diagonal matrix
+    //printf("Diagonal Elements : ");
+             for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            if(i==j)
+             {
+                sum=sum+A[i][j];
+             }
+        }
+    }
+
+    //upper lower
+         for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            if(i<j)
+             {
+                uppersum = uppersum+A[i][j];
+             }
+                if(i>j)
+             lowersum=lowersum+A[i][j];
+             }
+        }
+
+    printf("\nSum of Diagonal matrix = %d\n",sum);
+    printf("Sum of Upper matrix sum = %d\n",uppersum);
+    printf("Sum of Upper matrix sum = %d\n",lowersum);
+
+    return 0;
+}
+
+
+
