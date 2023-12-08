@@ -777,5 +777,113 @@ int main()
     return 0;
 }
 
+Display string character-wise
+#include <stdio.h>
+int main()
+{
+    char s1[]="Mojammel";
+    int i=0;
+
+    while(s1[i]!='\0')
+    {
+        printf("%c\n",s1[i]);
+        i++;
+    }
+
+    return 0;
+}
+finding length of String using strlen() function
+
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char s1[]="Mojammel Hossen Sojib";
+
+    int len =strlen(s1);
+
+    printf("Length = %d\n",len);
+
+    return 0;
+}
+
+finding length of String without strlen()
+
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char s1[]="Mojammel Hossen Sojib";
+    int i=0,len=0;
+
+    while(s1[i]!='\0')
+    {
+        i++;
+        len++;
+    }
+
+    printf("Length = %d",len);
+    return 0;
+}
 
 
+ copy string using strcpy()
+
+ #include <stdio.h>
+#include<string.h>
+int main()
+{
+    char source[]="Mojammel Hossen Sojib";
+    char target[20];
+
+    strcpy(target,source);
+
+    printf("Source string = %s\n",source);
+    printf("Source string = %s\n",target);
+    return 0;
+}
+
+
+ concatenation using strcat()
+
+
+ #include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str1[]="Md Mojammel Hossen";
+    //char str2[]=" Sojib";
+
+    strcat(str1," Sojib");
+
+    printf("string = %s\n",str1);
+    
+    return 0;
+}
+
+oncatenation without strcat()
+
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str1[50]="Md Mojammel Hossen";//[50] declar because 1 er modde 2 rakci
+    char str2[]="Sojib";
+
+    int i=0,len=0,j=0;
+    while(str1[i]!='\0')
+    {
+        i++;
+        len++;
+    }
+    while(str2[j]!='\0')
+    {
+        str1[len+j]=str2[j];
+        j++;
+    }
+
+    printf("string length= %d\n",len);
+
+    printf("Str1=%s\n",str1);
+    return 0;
+}
