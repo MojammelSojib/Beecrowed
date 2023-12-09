@@ -914,11 +914,24 @@ String reverse using strrev()
 #include<stdio.h>
 int main()
 {
-    char str1[]="MoJammel";
-    printf("Str = %s\n",str1);
-    strrev(str1);
+    char str1[30]="Mojammel";
+    char str2[30];
 
-   printf("sTrInG=%s\n",str1);
-   return
-   0;
+    int i=0,len=0,j;
+    while(str1[i]!='\0')
+    {
+        i++;
+        len++;
+    }
+
+    for(j=0,i=len-1;i>=0;i--,j++)
+    {
+        str2[j] = str1[i];
+    }
+    str2[j]='\0';
+
+    printf("str = %s\n",str1);
+    printf("str = %s\n",str2);
+    printf("str = %d\n",len);
 }
+
