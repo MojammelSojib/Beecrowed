@@ -887,3 +887,38 @@ int main()
     printf("Str1=%s\n",str1);
     return 0;
 }
+
+
+String compare using strcmp()
+
+#include<stdio.h>
+int main()
+{
+    char str1[]="Mojammel";
+    char str2[]="MojaMMel Hossen";
+
+    int d=strcmp(str1,str2);
+
+    if(d==0)
+    {
+        printf("String are equal");
+    }
+    else
+        printf("String are Not equal");
+
+
+}
+
+String reverse using strrev()
+
+#include<stdio.h>
+int main()
+{
+    char str1[]="MoJammel";
+    printf("Str = %s\n",str1);
+    strrev(str1);
+
+   printf("sTrInG=%s\n",str1);
+   return
+   0;
+}
