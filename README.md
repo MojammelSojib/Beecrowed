@@ -1019,6 +1019,7 @@ int main()
 
     }
     word++;
+ 
 
     printf("Vowels = %d\n", v);
     printf("Consonants = %d\n", c);
@@ -1060,3 +1061,25 @@ int main()
 
     getchar();
 }
+
+//Function 
+
+#include<stdio.h>
+
+void sum(int a,int b,int c)
+{
+   printf("%The sum is %d\n",a+b+c);
+}
+void sub(int a,int b)
+{
+    printf("The sub is = %d\n",a-b);
+}
+int main()
+{
+    sum(10,20,30);
+    sum(4,8,8);
+    sub(8,5);
+}
+
+
+
