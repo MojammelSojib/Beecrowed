@@ -1098,4 +1098,49 @@ int main()
     printf("square is : %d\n",result);
 }
 
+//using libaray power function
+#include<stdio.h>
+int main()
+{
+    double base,exp,result;
+
+    printf("Enter Base : ");
+    scanf("%lf",&base);
+
+    printf("Enter Exponent : ");
+    scanf("%lf",&exp);
+
+    result = pow(base,exp);
+
+    printf("%.1lf",result);
+}
+
+//x to the power y
+
+#include <stdio.h>
+
+void calculatepower(double base, double exp)
+{
+    double result = 1, i;
+    for (i = 0; i < exp; i++)
+    {
+        result = result * base;
+    }
+
+    printf("%.1lf\n", result);
+}
+
+int main()
+{
+    double base,exp;
+
+    printf("Enter Base : ");
+    scanf("%lf",&base);
+
+    printf("Enter Exponent : ");
+    scanf("%lf",&exp);
+
+    calculatepower(base, exp);
+
+}
 
