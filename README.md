@@ -1029,4 +1029,34 @@ int main()
     return 0;
 }
 
+//Number of capital-small letter,digit
 
+
+#include<stdio.h>
+int main()
+{
+    char str[100],ch;
+    int i,cap=0,small=0,digit=0;
+
+    printf("Enter a Sentence : ");
+    gets(str);
+
+    while(str[i]!='\0')
+    {
+        if(str[i]>=65 && str[i]<=90)
+        cap++;
+
+        else if(str[i]>=97 && str[i]<=122)
+        small++;
+
+        else if(str[i]>=48 && str[i]<=57)
+        digit++;
+
+        i++;
+    }
+    printf("Number of captial letter =%d\n",cap);
+    printf("Number of  small letter =%d\n",small);
+    printf("Number of digit=%d\n",digit);
+
+    getchar();
+}
