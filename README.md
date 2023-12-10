@@ -1081,5 +1081,21 @@ int main()
     sub(8,5);
 }
 
+//Function ---2
+
+#include<stdio.h>
+
+int square(int a)
+{
+    return a*a;
+}
+int main()
+{
+    int num;
+    printf("Enter a integer number : ");
+    scanf("%d",&num);
+    int result=square(num);
+    printf("square is : %d\n",result);
+}
 
 
