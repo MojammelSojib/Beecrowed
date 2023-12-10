@@ -962,5 +962,71 @@ int main()
     return 0;
 }
 
+//strupr() and strlwr()
+
+#include<stdio.h>
+#include <string.h>
+int main()
+{
+    char str1[56] = "Md MojaMMel HosSeN";
+
+    strupr(str1);
+    strlwr(str1);
+    printf("STRING UPPER = %s\n",str1);
+    printf("STRING LOWWER = %s\n",str1);
+    
+    return 0;
+}
+
+// Number of vowels, consonants, words, digits and other
+
+#include<stdio.h>
+#include <string.h>
+int main()
+{
+    char str[100],ch;
+    int i,v,c,digit,word,other;
+
+    printf("Enter a Sentence : ");
+    gets(str);
+
+    i=v=c=digit=word=other=0;
+
+    while((ch=str[i])!='\0')
+    {
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+            ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+            v++;
+        }
+
+
+
+
+        else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+
+          c++;
+
+        else if(ch>='0'&& ch<='9')
+        digit++;
+
+        else if(ch==' ')
+          word++;
+        else
+            other++;
+
+
+        i++;
+
+    }
+    word++;
+
+    printf("Vowels = %d\n", v);
+    printf("Consonants = %d\n", c);
+    printf("Spaces = %d\n", word);
+    printf("Digit = %d\n", digit);
+    printf("Other= %d\n", other);
+
+    return 0;
+}
 
 
