@@ -29,6 +29,7 @@ int main()
         return 0;
 
 }
+
 check factorial number code
 
 #include<stdio.h>
@@ -1208,3 +1209,4 @@ int main()
     }
     return 0;
 }
+
