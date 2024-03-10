@@ -1231,4 +1231,110 @@ int main()
     }
     return 0;
 }
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+
+Pattern=2
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n,row,col;
+    cin>>n;
+
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<row<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+1
+2 2
+3 3 3
+4 4 4 4
+
+#Pattern-1(same)
+*
+**
+***
+****
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n,row,col;
+    cin>>n;
+
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+
+
+
+Pattern=3
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n,row,col;
+    cin>>n;
+
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<col%2<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+1
+1 0
+1 0 1
+1 0 1 0 1
+1 0 1 0 1 0
+
+Pattern=4
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n,row,col;
+    cin>>n;
+
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<row%2<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+1
+0 0
+1 1 1
+0 0 0 0
 
