@@ -1241,7 +1241,6 @@ int main()
 Pattern=2
 #include <bits/stdc++.h>
 using namespace std;
-
 int main()
 {
     int n,row,col;
@@ -1261,33 +1260,6 @@ int main()
 2 2
 3 3 3
 4 4 4 4
-
-#Pattern-1(same)
-*
-**
-***
-****
-#include <bits/stdc++.h>
-using namespace std;
-
-int main()
-{
-    int n,row,col;
-    cin>>n;
-
-    for(row=1;row<=n;row++)
-    {
-        for(col=1;col<=row;col++)
-        {
-            cout<<"*";
-        }
-        cout<<endl;
-    }
-    return 0;
-}
-
-
-
 
 Pattern=3
 #include <bits/stdc++.h>
@@ -1338,6 +1310,36 @@ int main()
 1 1 1
 0 0 0 0
 
+
+#Pattern-1(same)
+*
+**
+***
+****
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n,row,col;
+    cin>>n;
+
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+
+
+
+
+
 Pattern=5
 1 2 3 4
 1 2 3
@@ -1362,3 +1364,119 @@ int main()
     }
     return 0;
 }
+
+
+
+Pattern Part 2
+
+1
+1 2
+1 2 3
+1 2 3
+1 2
+1
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n,row,col;
+    cout<<"Enter N= ";
+    cin>>n;
+
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<col<<" ";
+        }
+        cout<<endl;
+    }
+
+        for(row=n;row>=1;row--)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<col<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+pattern---
+
+
+1
+1 2
+1 2 3
+1 2
+1
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,row,col;
+    cout<<"Enter N= ";
+    cin>>n;
+
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<col<<" ";
+        }
+        cout<<endl;
+    }
+
+        for(row=n-1;row>=1;row--)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<col<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+pattern--
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+4 4 4 4
+3 3 3
+2 2
+1
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,row,col;
+    cout<<"Enter N= ";
+    cin>>n;
+
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<row<<" ";
+        }
+        cout<<endl;
+    }
+
+        for(row=n-1;row>=1;row--)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<row<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+
