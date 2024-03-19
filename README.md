@@ -1556,3 +1556,4 @@ int main()
     return 0;
 }
 
+Pattern Type 4
