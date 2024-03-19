@@ -1480,3 +1480,79 @@ int main()
 }
 
 
+pattern--
+A
+A B
+A B C
+A B C D
+A B C D E
+A B C D
+A B C
+A B
+A
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,row,col;
+    cout<<"Enter N= ";
+    cin>>n;
+
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<char(col +64)<<" ";
+        }
+        cout<<endl;
+    }
+
+        for(row=n-1;row>=1;row--)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<char(col +64)<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+pattern--
+*
+* *
+* * *
+* * * *
+* * *
+* *
+*
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,row,col;
+    cout<<"Enter N= ";
+    cin>>n;
+
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<"*"<<" ";
+        }
+        cout<<endl;
+    }
+
+        for(row=n-1;row>=1;row--)
+    {
+        for(col=1;col<=row;col++)
+        {
+            cout<<"*"<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
