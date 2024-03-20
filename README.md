@@ -1586,5 +1586,66 @@ int main() {
 
     return 0;
 }
+part-6
+ 1
+   22
+  333
+ 4444
+55555
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter N= ";
+    cin >> n;
+
+    for (int row = 1; row <= n; row++) {
+        // space print
+        for (int col = 1; col <= n - row; col++)
+            cout << " ";
+
+        // print column numbers
+        for (int col = 1; col <= row; col++) {
+            cout << row;
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
+Alphabet
+
+   A
+  AB
+ ABC
+ABCD
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter N= ";
+    cin >> n;
+
+    for (int row = 1; row <= n; row++) {
+        // space print
+        for (int col = 1; col <= n - row; col++)
+            cout << " ";
+
+        // print column numbers
+        for (int col = 1; col <= row; col++) {
+            cout << char(col+64);
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+
 
 
