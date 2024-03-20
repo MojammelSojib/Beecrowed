@@ -1557,3 +1557,34 @@ int main()
 }
 
 Pattern Type 4
+Part 6
+    1
+   12
+  123
+ 1234
+12345
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter N= ";
+    cin >> n;
+
+    for (int row = 1; row <= n; row++) {
+        // space print
+        for (int col = 1; col <= n - row; col++)
+            cout << " ";
+
+        // print column numbers
+        for (int col = 1; col <= row; col++) {
+            cout << col;
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
