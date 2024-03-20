@@ -1647,5 +1647,31 @@ int main() {
     return 0;
 }
 
+  *
+ **
+***
 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,row,col;
+    cout << "Enter N= ";
+    cin >> n;
+
+    for (int row = 1; row <= n; row++) {
+        // space print
+        for (col = 1; col <= n - row; col++)
+            cout << " ";
+
+        // print column numbers
+        for ( col = 1; col <= row; col++) {
+            cout << "*";
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
 
